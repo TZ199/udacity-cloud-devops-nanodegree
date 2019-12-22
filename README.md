@@ -8,7 +8,7 @@
 <ul>
 <li><a href="#intro">Problematic</a></li>
 <li><a href="#requirement">Requirements</a></li>
-<li><a href="#projects">Requirements</a></li>
+<li><a href="#projects">Deployments</a></li>
 </ul>
 
 <a id="intro"></a>
@@ -36,3 +36,6 @@ The scipts `bastion.yaml` is used to set up bastion host to allow sshing info ou
 
 ## webserver infractructure
 For the deployment of the webserver, the scripts `udagramservers.yaml` is developped. The application is deployed in private subnets and a Load Balancer in public subnets. For high availability, the application is deployment in more than one Azs.
+
+## website application url
+Thé deploy application is available in this link [udagram](http://udagr-applo-7lzpj7uge8hq-1893948389.eu-west-3.elb.amazonaws.com/index.html)
