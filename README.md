@@ -26,6 +26,13 @@ The servers will run inside a security group and the file that will be used for 
 
 ## Projects
 <a><a href="#projects"></a>
-### Creation of the infractructure networks
+ 
+### network infracture
 The network infractructure has been created first including the VPC (Virtual Private cloud) inside which our infractrure is created, the subnets, Internet gateway, Route Table,  NACL. 
- The scripts `udagram-infra.yaml` and `udagram-infra-params.json` is used for the creation of the clous network for the udagram application
+ The scripts `udagram-infra.yaml` and `udagram-infra-params.json` are used for the creation of the clous network for the udagram application
+
+### Bastion host 
+The scipts `bastion.yaml` is used to set up bastion host to allow sshing info out private subnets. The bastion host is placed in a public subnet with port 22 ans would nerd an ssh key.
+
+## webserver infractructure
+For the deployment of the webserver, the scripts `udagramservers.yaml` is developped. The application is deployed in private subnets and a Load Balancer in public subnets. For high availability, the application is deployment in more than one Azs.
