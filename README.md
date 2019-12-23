@@ -9,6 +9,7 @@
 <li><a href="#intro">Problematic</a></li>
 <li><a href="#requirement">Requirements</a></li>
 <li><a href="#projects">Deployments</a></li>
+<li><a href="#projects">references</a></li>
 </ul>
 
 <a id="intro"></a>
@@ -34,8 +35,15 @@ The network infractructure has been created first including the VPC (Virtual Pri
 ### Bastion host 
 The scipts `bastion.yaml` is used to set up bastion host to allow sshing info out private subnets. The bastion host is placed in a public subnet with port 22 ans would nerd an ssh key.
 
-## webserver infractructure
+### webserver infractructure
 For the deployment of the webserver, the scripts `udagramservers.yaml` is developped. The application is deployed in private subnets and a Load Balancer in public subnets. For high availability, the application is deployment in more than one Azs.
 
-## website application url
+### website application url
 Thé deploy application is available in this link [udagram](http://udagr-applo-7lzpj7uge8hq-1893948389.eu-west-3.elb.amazonaws.com/index.html)
+
+## References
+1. cloudformation deepdive https://github.com/natonic/CloudFormation-Deep-Dive (linuxacamademy.com)
+2. https://blog.boltops.com/2018/02/14/aws-cloudformation-declarative-infrastructure-code-tutorial
+3. https://docs.databricks.com/administration-guide/cloud-configurations/aws/iam-roles.html
+4. https://docs.aws.amazon.com/cloudformation/index.html
+5. https://github.com/guardian/amigo/blob/master/cloudformation.yaml
