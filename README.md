@@ -2,7 +2,7 @@
 # Project2: Deploy a high available website
 **Author:<a> Mouhamadou GUEYE</a>**
 
-**Date: May 26, 2019**
+**Date: December 23, 2019**
 ## Table of contents
 
 <ul>
