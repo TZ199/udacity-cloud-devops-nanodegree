@@ -436,7 +436,18 @@ Resources:
         TargetGroupArn: !Ref AppTargetGroup
       LoadBalancerArn: !Ref AppLoadBalancer
       Port: 80
-      Protocol: HTTP 
+      Protocol: HTTP
+  ListenerRule:
+    Type: AWS::ElasticLoadBalancingV2::ListenerRule
+    Properties:
+      Actions: #required
+        - Type: forward
+          TargetGroupArn: !Ref AppTargetGroup
+      Conditions: #required
+        - Field: path-pattern
+          Values: [/]
+      ListenerArn: !Ref  ALBListener #required
+      Priority: 1 #required
   UdacityS3ReadOnlyEC2:
     Type: AWS::IAM::Role
     Properties:
