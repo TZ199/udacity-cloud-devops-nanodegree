@@ -22,7 +22,7 @@ This needs to be done in an automated fashion so that the infrastructure can be 
 <a><a href="#requirement"></a>
 ### Server specs
 - Deploy a wep application using infractructure as a code including a launch configuration that will be used by an auto scaling group.
-### Security groups ans IAM Role
+### Security groups and IAM Role
 The servers will run inside a security group and the file that will be used for the project have to download from udacity s3 bucket. An IAM role will be use to allow s3 bucket to our instances
 
 ## Projects
