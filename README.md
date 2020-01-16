@@ -1,5 +1,5 @@
-# Udacity cloud devops nanodegree
-# Project2: Deploy a high available website
+# Udacity Cloud Devops Nanodegree
+# Project2: Deploy a highly available webapp on AWS
 **Author:<a> Mouhamadou GUEYE</a>**
 
 **Date: December 23, 2019**
