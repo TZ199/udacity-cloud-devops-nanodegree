@@ -4,9 +4,12 @@
 
 # Step 1:
 # Build image and add a descriptive tag
+docker build --tag=ml-microservice-prediction:v0.1 .
 
 # Step 2: 
 # List docker images
+docker image ls
 
 # Step 3: 
 # Run flask app
+docker run --rm -it --name ml-microservice-prediction -p 8000:80 ml-microservice-prediction:v0.1
