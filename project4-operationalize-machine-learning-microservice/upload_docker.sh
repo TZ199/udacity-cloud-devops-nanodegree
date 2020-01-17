@@ -5,13 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="mogueye87/ml-microservice-prediction:v0.1"
+dockerpath="mogueye87/ml-microservice"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login
-docker image tag ml-microservice-prediction $dockerpath
+docker login &&\
+  docker image tag ml-microservice $dockerpath
 
 # Step 3:
 # Push image to a docker repository
