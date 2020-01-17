@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/mogueye87/operationalize-ml-microservice-api.svg?style=svg&circle-token=465118084c2dcc6a6430059fa8128659d38c9679)](https://app.circleci.com/jobs/github/mogueye87/operationalize-ml-microservice-api/12)
+
 # Udacity Cloud Devops Nanodegree
 # Project 4: Operationalize a machine learning microservice API
 **Author:<a> Mouhamadou GUEYE</a>**
