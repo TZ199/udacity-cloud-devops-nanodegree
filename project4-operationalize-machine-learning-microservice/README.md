@@ -10,7 +10,6 @@
 <li><a href="#intro">Project Overview</a></li>
 <li><a href="#server">Install Docker on Ubuntu </a></li>
 <li><a href="#requirement">Setup the Environment</a></li>
-<li><a href="#projects">Deployments</a></li>
 <li><a href="#projects">references</a></li>
 </ul>
 
@@ -116,3 +115,9 @@ $ make install
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+## References
+1. Minikube in the Cloud on Ubuntu  (linuxacamademy.com)
+2. Python for DevOps: Learn Ruthlessly Effective Automation, By Noah Gift, Kennedy Behrman, Alfredo Deza, Grig Gheorghiu
+3. https://github.com/richardhowes
+
