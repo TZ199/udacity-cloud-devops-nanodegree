@@ -1,5 +1,19 @@
 <include a CircleCI status badge, here>
+# Udacity Cloud Devops Nanodegree
+# Project 4: Operationalize a machine learning microservice API
+**Author:<a> Mouhamadou GUEYE</a>**
 
+**Date: January 17, 2020**
+## Table of contents
+
+<ul>
+<li><a href="#intro">Project Overview</a></li>
+<li><a href="#requirement">Requirements</a></li>
+<li><a href="#projects">Deployments</a></li>
+<li><a href="#projects">references</a></li>
+</ul>
+
+<a id="intro"></a>
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -32,6 +46,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
+3. Making predictions: `./make_prediction.sh`
+4. Push Docker Images: `./upload_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
