@@ -8,7 +8,8 @@
 
 <ul>
 <li><a href="#intro">Project Overview</a></li>
-<li><a href="#requirement">Requirements</a></li>
+<li><a href="#server">Install Docker on Ubuntu </a></li>
+<li><a href="#requirement">Setup the Environment</a></li>
 <li><a href="#projects">Deployments</a></li>
 <li><a href="#projects">references</a></li>
 </ul>
@@ -36,10 +37,69 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 **The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
 ---
-
 ## Setup the Environment
+* Spining up an ubuntu cloud server and install Docker
+- Installing and testing Docker (remember to log out and back in for group changes to take effect):
+```sh
+sudo apt install -y docker.io
+sudo usermod -aG docker cloud_user
+docker run hello-world
+```
+- Get and install Minikube:
+```sh
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_1.4.0.deb
+sudo dpkg -i minikube_1.4.0.deb
+```
+- Configure and start Minikube:
+```sh
+sudo minikube config set vm-driver none
+sudo minikube start
+```
+* Download ans Install Python 3.7 from source
+> Download and Install Python 3 from Source
+> https://www.python.org/downloads/
+- Here are the commands that we'll run to build and install Python 3:
+```sh
+$ sudo -i
+$ apt update -y
+$ apt install -y \
+  wget \
+  build-essential \
+  libffi-dev \
+  libgdbm-dev \
+  libc6-dev \
+  libssl-dev \
+  zlib1g-dev \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  libncurses5-dev \
+  libncursesw5-dev \
+  xz-utils \
+  tk-dev
 
-* Create a virtualenv and activate it
+$ cd /usr/src
+$ wget http://python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
+$ tar xf Python-3.7.2.tar.xz
+$ cd Python-3.7.2
+$ ./configure --enable-optimizations
+$ make altinstall
+```
+
+- Additional configurations and installation of kubectl:
+```sh
+sudo chown -R $USER $HOME/.kube $HOME/.minikube
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+sudo chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+* Create a virtualenv and activate 
+```sh
+$ python3 -m venv ~/.devops
+$ source ~/.devops/bin/activate
+$ make install
+```
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
