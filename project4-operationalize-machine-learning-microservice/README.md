@@ -120,5 +120,5 @@ $ make install
 ## References
 1. Minikube in the Cloud on Ubuntu  (linuxacamademy.com)
 2. Python for DevOps: Learn Ruthlessly Effective Automation, By Noah Gift, Kennedy Behrman, Alfredo Deza, Grig Gheorghiu
-3. https://github.com/richardhowes
+3. https://circleci.com/docs/2.0/status-badges/
 
